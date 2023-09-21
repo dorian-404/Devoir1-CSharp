@@ -1,0 +1,9 @@
+E:\2eme annee\PROG 1236 (Programmation d'applications de donnees multicouches sous .NET)\Devoirs\NBAForm\NBAForm\bin\Debug\NBAForm.exe
+E:\2eme annee\PROG 1236 (Programmation d'applications de donnees multicouches sous .NET)\Devoirs\NBAForm\NBAForm\bin\Debug\NBAForm.pdb
+E:\2eme annee\PROG 1236 (Programmation d'applications de donnees multicouches sous .NET)\Devoirs\NBAForm\NBAForm\obj\Debug\NBAForm.csproj.AssemblyReference.cache
+E:\2eme annee\PROG 1236 (Programmation d'applications de donnees multicouches sous .NET)\Devoirs\NBAForm\NBAForm\obj\Debug\NBAForm.BestTeamNBAForm.resources
+E:\2eme annee\PROG 1236 (Programmation d'applications de donnees multicouches sous .NET)\Devoirs\NBAForm\NBAForm\obj\Debug\NBAForm.Properties.Resources.resources
+E:\2eme annee\PROG 1236 (Programmation d'applications de donnees multicouches sous .NET)\Devoirs\NBAForm\NBAForm\obj\Debug\NBAForm.csproj.GenerateResource.cache
+E:\2eme annee\PROG 1236 (Programmation d'applications de donnees multicouches sous .NET)\Devoirs\NBAForm\NBAForm\obj\Debug\NBAForm.csproj.CoreCompileInputs.cache
+E:\2eme annee\PROG 1236 (Programmation d'applications de donnees multicouches sous .NET)\Devoirs\NBAForm\NBAForm\obj\Debug\NBAForm.exe
+E:\2eme annee\PROG 1236 (Programmation d'applications de donnees multicouches sous .NET)\Devoirs\NBAForm\NBAForm\obj\Debug\NBAForm.pdb
