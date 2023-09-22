@@ -58,9 +58,10 @@
             this.titreLabel.AutoSize = true;
             this.titreLabel.Font = new System.Drawing.Font("Cooper Black", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.titreLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.titreLabel.Location = new System.Drawing.Point(270, 37);
+            this.titreLabel.Location = new System.Drawing.Point(360, 46);
+            this.titreLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.titreLabel.Name = "titreLabel";
-            this.titreLabel.Size = new System.Drawing.Size(349, 36);
+            this.titreLabel.Size = new System.Drawing.Size(439, 46);
             this.titreLabel.TabIndex = 0;
             this.titreLabel.Text = "Meilleur joueur NBA";
             // 
@@ -70,9 +71,10 @@
             this.descriptionLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.descriptionLabel.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.descriptionLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.descriptionLabel.Location = new System.Drawing.Point(367, 142);
+            this.descriptionLabel.Location = new System.Drawing.Point(489, 175);
+            this.descriptionLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.descriptionLabel.Name = "descriptionLabel";
-            this.descriptionLabel.Size = new System.Drawing.Size(290, 87);
+            this.descriptionLabel.Size = new System.Drawing.Size(362, 112);
             this.descriptionLabel.TabIndex = 3;
             this.descriptionLabel.Text = "  - Le nombre de PlayOffs remportes\r\n  - Le nombre de M.V.P recus\r\n  - Le nombre " +
     "de points marques \r\n  - Le nombre de passes delivres \r\n  - Le nombre de 3 points" +
@@ -81,9 +83,10 @@
             // michaelPictureBox
             // 
             this.michaelPictureBox.Image = global::NBAForm.Properties.Resources.michael_jordan;
-            this.michaelPictureBox.Location = new System.Drawing.Point(39, 106);
+            this.michaelPictureBox.Location = new System.Drawing.Point(52, 130);
+            this.michaelPictureBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.michaelPictureBox.Name = "michaelPictureBox";
-            this.michaelPictureBox.Size = new System.Drawing.Size(302, 234);
+            this.michaelPictureBox.Size = new System.Drawing.Size(403, 288);
             this.michaelPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.michaelPictureBox.TabIndex = 4;
             this.michaelPictureBox.TabStop = false;
@@ -91,9 +94,10 @@
             // logoPictureBox
             // 
             this.logoPictureBox.Image = global::NBAForm.Properties.Resources.nba_logo_2x;
-            this.logoPictureBox.Location = new System.Drawing.Point(699, 20);
+            this.logoPictureBox.Location = new System.Drawing.Point(932, 25);
+            this.logoPictureBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.logoPictureBox.Name = "logoPictureBox";
-            this.logoPictureBox.Size = new System.Drawing.Size(103, 83);
+            this.logoPictureBox.Size = new System.Drawing.Size(137, 102);
             this.logoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.logoPictureBox.TabIndex = 2;
             this.logoPictureBox.TabStop = false;
@@ -101,9 +105,10 @@
             // logoPictureBox1
             // 
             this.logoPictureBox1.Image = global::NBAForm.Properties.Resources.nba_logo_2x;
-            this.logoPictureBox1.Location = new System.Drawing.Point(76, 20);
+            this.logoPictureBox1.Location = new System.Drawing.Point(101, 25);
+            this.logoPictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.logoPictureBox1.Name = "logoPictureBox1";
-            this.logoPictureBox1.Size = new System.Drawing.Size(107, 88);
+            this.logoPictureBox1.Size = new System.Drawing.Size(143, 108);
             this.logoPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.logoPictureBox1.TabIndex = 1;
             this.logoPictureBox1.TabStop = false;
@@ -113,9 +118,10 @@
             this.descriptionJoueurLbael.AutoSize = true;
             this.descriptionJoueurLbael.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.descriptionJoueurLbael.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.descriptionJoueurLbael.Location = new System.Drawing.Point(364, 272);
+            this.descriptionJoueurLbael.Location = new System.Drawing.Point(485, 335);
+            this.descriptionJoueurLbael.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.descriptionJoueurLbael.Name = "descriptionJoueurLbael";
-            this.descriptionJoueurLbael.Size = new System.Drawing.Size(520, 68);
+            this.descriptionJoueurLbael.Size = new System.Drawing.Size(650, 88);
             this.descriptionJoueurLbael.TabIndex = 5;
             this.descriptionJoueurLbael.Text = resources.GetString("descriptionJoueurLbael.Text");
             this.descriptionJoueurLbael.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -126,9 +132,10 @@
             this.titreDescriptionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
                 | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.titreDescriptionLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.titreDescriptionLabel.Location = new System.Drawing.Point(364, 108);
+            this.titreDescriptionLabel.Location = new System.Drawing.Point(485, 133);
+            this.titreDescriptionLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.titreDescriptionLabel.Name = "titreDescriptionLabel";
-            this.titreDescriptionLabel.Size = new System.Drawing.Size(65, 16);
+            this.titreDescriptionLabel.Size = new System.Drawing.Size(83, 20);
             this.titreDescriptionLabel.TabIndex = 6;
             this.titreDescriptionLabel.Text = "Criteres:";
             // 
@@ -137,9 +144,10 @@
             this.logoRadioButton.AutoSize = true;
             this.logoRadioButton.Font = new System.Drawing.Font("Cascadia Code", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.logoRadioButton.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.logoRadioButton.Location = new System.Drawing.Point(48, 27);
+            this.logoRadioButton.Location = new System.Drawing.Point(64, 33);
+            this.logoRadioButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.logoRadioButton.Name = "logoRadioButton";
-            this.logoRadioButton.Size = new System.Drawing.Size(53, 20);
+            this.logoRadioButton.Size = new System.Drawing.Size(66, 24);
             this.logoRadioButton.TabIndex = 7;
             this.logoRadioButton.TabStop = true;
             this.logoRadioButton.Text = "Logo";
@@ -150,9 +158,10 @@
             this.imageRadioButton.AutoSize = true;
             this.imageRadioButton.Font = new System.Drawing.Font("Cascadia Code", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.imageRadioButton.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.imageRadioButton.Location = new System.Drawing.Point(48, 53);
+            this.imageRadioButton.Location = new System.Drawing.Point(64, 65);
+            this.imageRadioButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.imageRadioButton.Name = "imageRadioButton";
-            this.imageRadioButton.Size = new System.Drawing.Size(60, 20);
+            this.imageRadioButton.Size = new System.Drawing.Size(75, 24);
             this.imageRadioButton.TabIndex = 8;
             this.imageRadioButton.TabStop = true;
             this.imageRadioButton.Text = "Image";
@@ -164,9 +173,11 @@
             this.impressionGroupBox.Controls.Add(this.imageRadioButton);
             this.impressionGroupBox.Controls.Add(this.logoRadioButton);
             this.impressionGroupBox.Font = new System.Drawing.Font("Cooper Black", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.impressionGroupBox.Location = new System.Drawing.Point(39, 382);
+            this.impressionGroupBox.Location = new System.Drawing.Point(52, 470);
+            this.impressionGroupBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.impressionGroupBox.Name = "impressionGroupBox";
-            this.impressionGroupBox.Size = new System.Drawing.Size(302, 116);
+            this.impressionGroupBox.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.impressionGroupBox.Size = new System.Drawing.Size(403, 143);
             this.impressionGroupBox.TabIndex = 9;
             this.impressionGroupBox.TabStop = false;
             this.impressionGroupBox.Text = "Impression";
@@ -174,11 +185,12 @@
             // ImprimerButton
             // 
             this.ImprimerButton.Font = new System.Drawing.Font("Cascadia Code", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ImprimerButton.Location = new System.Drawing.Point(48, 83);
+            this.ImprimerButton.Location = new System.Drawing.Point(64, 102);
+            this.ImprimerButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ImprimerButton.Name = "ImprimerButton";
-            this.ImprimerButton.Size = new System.Drawing.Size(75, 23);
+            this.ImprimerButton.Size = new System.Drawing.Size(100, 28);
             this.ImprimerButton.TabIndex = 9;
-            this.ImprimerButton.Text = "Imprimer";
+            this.ImprimerButton.Text = "&Imprimer";
             this.ImprimerButton.UseVisualStyleBackColor = true;
             this.ImprimerButton.Click += new System.EventHandler(this.ImprimerButton_Click);
             // 
@@ -188,19 +200,21 @@
             this.siteLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
                 | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.siteLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.siteLabel.Location = new System.Drawing.Point(364, 366);
+            this.siteLabel.Location = new System.Drawing.Point(485, 450);
+            this.siteLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.siteLabel.Name = "siteLabel";
-            this.siteLabel.Size = new System.Drawing.Size(182, 16);
+            this.siteLabel.Size = new System.Drawing.Size(225, 20);
             this.siteLabel.TabIndex = 10;
             this.siteLabel.Text = "Sites pour en savoir plus:";
             // 
             // listeSiteTextBox
             // 
             this.listeSiteTextBox.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listeSiteTextBox.Location = new System.Drawing.Point(367, 396);
+            this.listeSiteTextBox.Location = new System.Drawing.Point(489, 487);
+            this.listeSiteTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listeSiteTextBox.Multiline = true;
             this.listeSiteTextBox.Name = "listeSiteTextBox";
-            this.listeSiteTextBox.Size = new System.Drawing.Size(457, 78);
+            this.listeSiteTextBox.Size = new System.Drawing.Size(608, 95);
             this.listeSiteTextBox.TabIndex = 11;
             this.listeSiteTextBox.Text = "https://www.netflix.com/ca-fr/title/80203144\r\nhttps://www.nba.com/stats/player/89" +
     "3/career\r\nhttps://www.britannica.com/biography/Michael-Jordan\r\nhttps://www.micha" +
@@ -213,9 +227,10 @@
             this.bioLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
                 | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bioLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.bioLabel.Location = new System.Drawing.Point(364, 242);
+            this.bioLabel.Location = new System.Drawing.Point(485, 298);
+            this.bioLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.bioLabel.Name = "bioLabel";
-            this.bioLabel.Size = new System.Drawing.Size(90, 16);
+            this.bioLabel.Size = new System.Drawing.Size(112, 20);
             this.bioLabel.TabIndex = 12;
             this.bioLabel.Text = "Description:";
             // 
@@ -224,22 +239,25 @@
             this.programmeurLabel.AutoSize = true;
             this.programmeurLabel.Font = new System.Drawing.Font("Cascadia Code", 9.75F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
                 | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.programmeurLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.programmeurLabel.Location = new System.Drawing.Point(36, 528);
+            this.programmeurLabel.ForeColor = System.Drawing.Color.Blue;
+            this.programmeurLabel.Location = new System.Drawing.Point(48, 650);
+            this.programmeurLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.programmeurLabel.Name = "programmeurLabel";
-            this.programmeurLabel.Size = new System.Drawing.Size(312, 17);
+            this.programmeurLabel.Size = new System.Drawing.Size(390, 22);
             this.programmeurLabel.TabIndex = 13;
             this.programmeurLabel.Text = "Programmeurs : Dorian et Franck Gildas";
             // 
             // fermerButton
             // 
             this.fermerButton.Font = new System.Drawing.Font("Cascadia Code", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fermerButton.Location = new System.Drawing.Point(737, 516);
+            this.fermerButton.Location = new System.Drawing.Point(983, 635);
+            this.fermerButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.fermerButton.Name = "fermerButton";
-            this.fermerButton.Size = new System.Drawing.Size(87, 29);
+            this.fermerButton.Size = new System.Drawing.Size(116, 36);
             this.fermerButton.TabIndex = 14;
             this.fermerButton.Text = "Fermer";
             this.fermerButton.UseVisualStyleBackColor = true;
+            this.fermerButton.Click += new System.EventHandler(this.fermerButton_Click);
             // 
             // nbaPrintPreviewDialog
             // 
@@ -258,11 +276,11 @@
             // 
             // BestTeamNBAForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Brown;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(887, 569);
+            this.ClientSize = new System.Drawing.Size(1183, 700);
             this.Controls.Add(this.fermerButton);
             this.Controls.Add(this.programmeurLabel);
             this.Controls.Add(this.bioLabel);
@@ -276,6 +294,7 @@
             this.Controls.Add(this.logoPictureBox);
             this.Controls.Add(this.logoPictureBox1);
             this.Controls.Add(this.titreLabel);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "BestTeamNBAForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Meilleur joueur NBA";

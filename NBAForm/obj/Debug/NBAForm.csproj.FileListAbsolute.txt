@@ -7,3 +7,12 @@ E:\2eme annee\PROG 1236 (Programmation d'applications de donnees multicouches so
 E:\2eme annee\PROG 1236 (Programmation d'applications de donnees multicouches sous .NET)\Devoirs\NBAForm\NBAForm\obj\Debug\NBAForm.csproj.CoreCompileInputs.cache
 E:\2eme annee\PROG 1236 (Programmation d'applications de donnees multicouches sous .NET)\Devoirs\NBAForm\NBAForm\obj\Debug\NBAForm.exe
 E:\2eme annee\PROG 1236 (Programmation d'applications de donnees multicouches sous .NET)\Devoirs\NBAForm\NBAForm\obj\Debug\NBAForm.pdb
+C:\Users\frank\Documents\CCNB\Deuxieme annee\Session d'automne\PROG1236 - Programmation d'applications de données multicouches sous .NET\Projets\Devoir1-CSharp\NBAForm\bin\Debug\NBAForm.exe
+C:\Users\frank\Documents\CCNB\Deuxieme annee\Session d'automne\PROG1236 - Programmation d'applications de données multicouches sous .NET\Projets\Devoir1-CSharp\NBAForm\bin\Debug\NBAForm.pdb
+C:\Users\frank\Documents\CCNB\Deuxieme annee\Session d'automne\PROG1236 - Programmation d'applications de données multicouches sous .NET\Projets\Devoir1-CSharp\NBAForm\obj\Debug\NBAForm.csproj.AssemblyReference.cache
+C:\Users\frank\Documents\CCNB\Deuxieme annee\Session d'automne\PROG1236 - Programmation d'applications de données multicouches sous .NET\Projets\Devoir1-CSharp\NBAForm\obj\Debug\NBAForm.BestTeamNBAForm.resources
+C:\Users\frank\Documents\CCNB\Deuxieme annee\Session d'automne\PROG1236 - Programmation d'applications de données multicouches sous .NET\Projets\Devoir1-CSharp\NBAForm\obj\Debug\NBAForm.Properties.Resources.resources
+C:\Users\frank\Documents\CCNB\Deuxieme annee\Session d'automne\PROG1236 - Programmation d'applications de données multicouches sous .NET\Projets\Devoir1-CSharp\NBAForm\obj\Debug\NBAForm.csproj.GenerateResource.cache
+C:\Users\frank\Documents\CCNB\Deuxieme annee\Session d'automne\PROG1236 - Programmation d'applications de données multicouches sous .NET\Projets\Devoir1-CSharp\NBAForm\obj\Debug\NBAForm.csproj.CoreCompileInputs.cache
+C:\Users\frank\Documents\CCNB\Deuxieme annee\Session d'automne\PROG1236 - Programmation d'applications de données multicouches sous .NET\Projets\Devoir1-CSharp\NBAForm\obj\Debug\NBAForm.exe
+C:\Users\frank\Documents\CCNB\Deuxieme annee\Session d'automne\PROG1236 - Programmation d'applications de données multicouches sous .NET\Projets\Devoir1-CSharp\NBAForm\obj\Debug\NBAForm.pdb
