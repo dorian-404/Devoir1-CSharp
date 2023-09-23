@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Devoir1-CSharp",
+    "\\Devoir1-CSharp\\NBAForm",
+    "\\NBAForm"
   ],
+  "SelectedNode": "\\Devoir1-CSharp\\NBAForm\\BestTeamNBAForm.cs",
   "PreviewInSolutionExplorer": false
 }

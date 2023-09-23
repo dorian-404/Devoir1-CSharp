@@ -63,9 +63,9 @@ namespace NBAForm.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap michael_jordan {
+        internal static System.Drawing.Bitmap Michael_Jordan {
             get {
-                object obj = ResourceManager.GetObject("michael jordan", resourceCulture);
+                object obj = ResourceManager.GetObject("Michael_Jordan", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace NBAForm.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap nba_logo_2x {
+        internal static System.Drawing.Bitmap nbaLogo {
             get {
-                object obj = ResourceManager.GetObject("nba-logo_2x", resourceCulture);
+                object obj = ResourceManager.GetObject("nbaLogo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

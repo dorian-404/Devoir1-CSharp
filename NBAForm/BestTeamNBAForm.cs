@@ -1,4 +1,14 @@
-﻿using System;
+﻿/*
+    Programmeur:    Dorian Wontcheu & Franck G.
+    Date:           Septembre
+
+    Solution:       NBAForm.sln
+    Projet:         NBAForm.csproj
+    Classe:         NBAForm.cs
+
+    But:            Aperçu avant impression du rapport des meilleurs joueurs de la NBA.
+*/
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,30 +21,53 @@ namespace NBAForm
 {
     public partial class BestTeamNBAForm : Form
     {
+
+        #region Initialisations
         public BestTeamNBAForm()
         {
             InitializeComponent();
         }
 
+        private void BestTeamNBAForm_Load(object sender, EventArgs e)
+        {
 
-        #region PrintPage
+        }
+
+        #endregion
+
+        #region Imprimer les sites
+        private void imprimerButton_Click(object sender, EventArgs e)
+        {
+            nbaPrintPreviewDialog.ShowDialog();
+        }
+
         private void nbaPrintDocument_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
             // defintion des polices pour l'entete, des titres
             Graphics g = e.Graphics;
 
             Font titreFont = new Font("Cooper Black", 24, FontStyle.Italic ^ FontStyle.Bold);
-            Font enteteFont = new Font("MS Sans Serif", 14, FontStyle.Italic ^ FontStyle.Underline);
+            Font enteteFont = new Font("MS Sans Serif", 14, FontStyle.Regular ^ FontStyle.Bold);
             Font descriptionFont = new Font("Cascadia Code", 10);
-            Font dateFont = new Font ("Cascadia Code", 18);
+            Font dateFont = new Font("Cascadia Code", 18);
 
             // definition du titre du rapport et mesure 
             string nomString = "Dorian & Franck";
 
+            // Date d'aujourd'hui
+            string dateString = DateTime.Today.ToLongDateString();
+            string nomDateString = nomString + ", date = " + dateString;
+
+            // Polices du nom et date ensembles
+
+            Font nomDateFont = new Font("Magneto", 16, FontStyle.Italic ^ FontStyle.Bold);
+
+
             string titreString = titreLabel.Text + " - " + nomString;
-            SizeF largeurTitreSizeF = g.MeasureString(titreString, titreFont);
+            Single largeurTitreSingle = g.MeasureString(titreString, titreFont).Width;
 
             string enteteString = "Sites pour en savoir plus";
+            Single largeurEnteteSingle = g.MeasureString(enteteString, enteteFont).Width;
 
             // taille des polices
             Single taillePoliceTitreSingle = titreFont.GetHeight();
@@ -44,23 +77,59 @@ namespace NBAForm
             // Taille de l'image en pixels
             //Single largeurLogoSingle;
 
+            Single largeurDuLogoSingle;
+            Single hauteurDuLogoSingle;
+
+            if (impressionLogoRadioButton.Checked)
+            {
+                largeurDuLogoSingle = (nbaLogoPictureBox.Image.Width / nbaLogoPictureBox.Image.HorizontalResolution) * 100.0F;
+                hauteurDuLogoSingle = (nbaLogoPictureBox.Image.Height / nbaLogoPictureBox.Image.VerticalResolution) * 100.0F;
+            }
+            else
+            {
+                largeurDuLogoSingle = (michaelImagePictureBox.Image.Width / michaelImagePictureBox.Image.HorizontalResolution) * 100.0F;
+                hauteurDuLogoSingle = (michaelImagePictureBox.Image.Height / michaelImagePictureBox.Image.VerticalResolution) * 100.0F;
+            }
+
+            // Position initiale du crayon
+
+            Single xSingle = e.MarginBounds.X;
+            Single ySingle = e.MarginBounds.Y;
+
+            if (impressionLogoRadioButton.Checked)
+                g.DrawImage(Properties.Resources.nbaLogo, xSingle + (e.MarginBounds.Width - largeurDuLogoSingle) / 2, ySingle);
+            else
+                g.DrawImage(Properties.Resources.Michael_Jordan, xSingle + (e.MarginBounds.Width - largeurDuLogoSingle) / 2, ySingle);
+
+            ySingle += hauteurDuLogoSingle;
+
+            g.DrawString(titreString, titreFont, Brushes.DarkRed, xSingle, ySingle);
+            g.DrawRectangle(Pens.DarkSlateBlue, xSingle, ySingle, largeurTitreSingle, taillePoliceTitreSingle);
+
+            ySingle += taillePoliceTitreSingle * 2.0F;
+
+            g.DrawString(enteteString, enteteFont, Brushes.DarkViolet, xSingle, ySingle);
+
+            ySingle += taillePoliceEntetesingle + 5;
+
+            g.DrawLine(new Pen(Color.Goldenrod, 7.0F), xSingle, ySingle, xSingle + e.MarginBounds.Width, ySingle);
+
+            ySingle += taillePoliceTitreSingle;
+
+            for (int i = 0; i < listeSiteTextBox.Lines.Length; i++)
+            {
+                g.DrawString((i + 1) + "     " + listeSiteTextBox.Lines[i], descriptionFont, Brushes.DarkRed, xSingle, ySingle);
+
+                ySingle += taillePoliceDescriptionSingle;
+            }
+
+            ySingle += taillePoliceTitreSingle * 2.0F;
+
+            g.DrawString(nomDateString, nomDateFont, Brushes.DeepPink, xSingle, ySingle);
         }
+
 
         #endregion
-
-        #region Imprimer
-        private void ImprimerButton_Click(object sender, EventArgs e)
-        {
-            nbaPrintPreviewDialog.ShowDialog();
-
-        }
-
-        #endregion
-
-        private void BestTeamNBAForm_Load(object sender, EventArgs e)
-        {
-
-        }
 
         #region Fermer l'Application
         private void fermerButton_Click(object sender, EventArgs e)
