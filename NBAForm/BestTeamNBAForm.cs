@@ -80,15 +80,21 @@ namespace NBAForm
             Single largeurDuLogoSingle;
             Single hauteurDuLogoSingle;
 
+            Image logo;
+
             if (impressionLogoRadioButton.Checked)
             {
-                largeurDuLogoSingle = (nbaLogoPictureBox.Image.Width / nbaLogoPictureBox.Image.HorizontalResolution) * 100.0F;
-                hauteurDuLogoSingle = (nbaLogoPictureBox.Image.Height / nbaLogoPictureBox.Image.VerticalResolution) * 100.0F;
+                largeurDuLogoSingle = (nbaLogoPictureBox.Image.Width / nbaLogoPictureBox.Image.HorizontalResolution) * 50.0F;
+                hauteurDuLogoSingle = (nbaLogoPictureBox.Image.Height / nbaLogoPictureBox.Image.VerticalResolution) * 50.0F;
+
+                logo = Properties.Resources.nbaLogo;
             }
             else
             {
-                largeurDuLogoSingle = (michaelImagePictureBox.Image.Width / michaelImagePictureBox.Image.HorizontalResolution) * 100.0F;
-                hauteurDuLogoSingle = (michaelImagePictureBox.Image.Height / michaelImagePictureBox.Image.VerticalResolution) * 100.0F;
+                largeurDuLogoSingle = (michaelImagePictureBox.Image.Width / michaelImagePictureBox.Image.HorizontalResolution) * 50.0F;
+                hauteurDuLogoSingle = (michaelImagePictureBox.Image.Height / michaelImagePictureBox.Image.VerticalResolution) * 50.0F;
+
+                logo = Properties.Resources.Michael_Jordan;
             }
 
             // Position initiale du crayon
@@ -96,12 +102,13 @@ namespace NBAForm
             Single xSingle = e.MarginBounds.X;
             Single ySingle = e.MarginBounds.Y;
 
-            if (impressionLogoRadioButton.Checked)
-                g.DrawImage(Properties.Resources.nbaLogo, xSingle + (e.MarginBounds.Width - largeurDuLogoSingle) / 2, ySingle);
-            else
-                g.DrawImage(Properties.Resources.Michael_Jordan, xSingle + (e.MarginBounds.Width - largeurDuLogoSingle) / 2, ySingle);
+            Size nouvelleTaille = new Size((int)largeurDuLogoSingle, (int)hauteurDuLogoSingle);
 
-            ySingle += hauteurDuLogoSingle;
+            logo = ImageRedimensionner(logo, nouvelleTaille);
+
+            g.DrawImage(logo, xSingle + (e.MarginBounds.Width - largeurDuLogoSingle) / 2, ySingle);
+
+            ySingle += hauteurDuLogoSingle + 20.0F;
 
             g.DrawString(titreString, titreFont, Brushes.DarkRed, xSingle, ySingle);
             g.DrawRectangle(Pens.DarkSlateBlue, xSingle, ySingle, largeurTitreSingle, taillePoliceTitreSingle);
@@ -128,6 +135,10 @@ namespace NBAForm
             g.DrawString(nomDateString, nomDateFont, Brushes.DeepPink, xSingle, ySingle);
         }
 
+        private Image ImageRedimensionner(Image imgARedimensionner, Size taille)
+        {
+            return (Image)(new Bitmap(imgARedimensionner, taille));
+        }
 
         #endregion
 
